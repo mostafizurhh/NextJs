@@ -1,14 +1,14 @@
 import Link from "next/link";
 
-const Post = ({ post }) => {
+const Posts = ({ posts }) => {
     return (
         <div className="card w-96 mt-10 bg-primary text-primary-content">
             <div className="card-body">
-                <h2 className="card-title capitalize">{post.title}</h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <h2 className="card-title capitalize">{posts.title}</h2>
+                <p>Click the see details button to see all details regarding the post.</p>
                 <div className="card-actions justify-end">
                     {/* use dynamic route */}
-                    <Link href={`/post/${post?.id}`}>
+                    <Link href={`/AllPosts/${posts?.id}`}>
                         <button className="btn btn-sm btn-info">See Details</button>
                     </Link>
                 </div>
@@ -17,4 +17,4 @@ const Post = ({ post }) => {
     );
 };
 
-export default Post;
+export default Posts;

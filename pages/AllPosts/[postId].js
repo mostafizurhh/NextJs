@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 const postId = ({ post }) => {
     //implement back to posts button
     const router = useRouter();
-    const handleBack = () => { router.push('/post') }
+    const handleBack = () => { router.push('/AllPosts') }
     /////////////////////////////////////////
 
 
