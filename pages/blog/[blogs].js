@@ -1,12 +1,13 @@
 import { useRouter } from "next/router";
 
-//create dynamic pages/routes
+//create dynamic pages/routes >> [page/route name].js
 const blogs = () => {
-    const router = useRouter();
-    const id = router.query.blogs;
+    //to show dynamic page number on ui
+    //const router = useRouter();
+    //const id = router.query.blogs;
     return (
         <div>
-            <h2>this is page no {id} of blogs.</h2>
+            <h2>this is page no -- of blogs.</h2>
         </div>
     );
 };
