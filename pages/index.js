@@ -13,6 +13,7 @@ export default function Home() {
       {/* link component >> to navigate from one page to another */}
       <Link href='/blog'><button className="btn btn-success btn-sm">Go to Blog</button></Link>
       <Link href='/AllPosts'><button className="btn btn-success btn-sm ml-5">Go to Posts</button></Link>
+      <Link href='/Comments'><button className="btn btn-success btn-sm ml-5">Go to Comments</button></Link>
       <div className="mt-10 ml-8">
         <Image src='/sm1.png' width={300} height={900} alt=''></Image>
       </div>
