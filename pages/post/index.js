@@ -2,14 +2,13 @@ import Head from "next/head";
 import Post from "../../Components/Post/Post";
 
 const Posts = ({ posts }) => {
-    console.log(posts)
     return (
         <div className="ml-5">
             <Head>
                 <title>Posts Page</title>
             </Head>
             <h2 className="text-2xl">Total loaded posts {posts.length}</h2>
-            <div className="grid grid-cols-3">
+            <div className="grid grid-cols-1 md:grid-cols-3 p-5">
                 {
                     posts.map(post => <Post
                         key={post.id}
